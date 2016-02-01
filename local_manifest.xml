@@ -5,6 +5,6 @@
 	<project path="vendor/lge/l70pn" name="meganukebmp/proprietary_vendor_lge_l70pn" remote="github" revision="master" />
 	<project path="vendor/lge/msm8610-common" name="meganukebmp/proprietary_vendor_lge_msm8610-common" remote="github" revision="cm-12.1" />
 	<project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" revision="cm-12.1" />
-    <project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-12.1" />
+	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-12.1" />
 	<project path="kernel/lge/msm8610" name="meganukebmp/android_kernel_lge_l70pds_l70pn" remote="github" revision="master" />
 </manifest>
