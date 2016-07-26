@@ -8,14 +8,15 @@
 	<project path="vendor/lge/msm8610-common" name="geekydoc/proprietary_vendor_lge_msm8610-common" remote="github" revision="cm-12.1" />
 	<project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" revision="cm-12.1" />
 	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-12.1" />
+	<project path="kernel/lge/msm8610" name="geekydoc/android_kernel_lge_l70pds_l70pn" remote="github" revision="master" />
 
 
 	<!-- We implement NFC support using the open source NXP implementation. We use a modified HAL for NFC which forces the download of the firmware to the chip -->
-	<project path="kernel/lge/msm8610" name="geekydoc/android_kernel_lge_l70pds_l70pn" remote="github" revision="master" />
+	
 	<project path="external/libnfc-nci" name="geekydoc/NFC_NCIHAL_libnfc-nci" remote="github" revision="master"/>
 	<project path="packages/apps/Nfc" name="NXPNFCProject/NFC_NCIHAL_Nfc" remote="github" revision="refs/tags/NFC_NCIHALx_AR0F.3.5.0_L_OpnSrc"/>
 	<project path="NxpNfcAndroid/NXPNFC_Reference" name="NXPNFCProject/NXPNFC_Reference" remote="github" revision="refs/tags/NFC_NCIHALx_AR0F.3.5.0_L_OpnSrc">
-	<copyfile src="hardware/libhardware/include/hardware/nfc.h" dest="hardware/libhardware/include/hardware/nfc.h" />
+		<copyfile src="hardware/libhardware/include/hardware/nfc.h" dest="hardware/libhardware/include/hardware/nfc.h" />
   	</project>
 	<project path="NxpNfcAndroid/NFC_NCIHAL_base" name="NXPNFCProject/NFC_NCIHAL_base" remote="github" revision="refs/tags/NFC_NCIHALx_AR0F.3.5.0_L_OpnSrc"/>
   	<project path="NxpNfcAndroid/" name="NXPNFCLinux/nxpnfc_android_lollipop" remote="github" revision="master"/>
