@@ -9,7 +9,12 @@
 	<project path="hardware/qcom/fm" name="CyanogenMod/android_hardware_qcom_fm" revision="cm-12.1" />
 	<project path="device/qcom/common" name="CyanogenMod/android_device_qcom_common" revision="cm-12.1" />
 	<project path="kernel/lge/msm8610" name="geekydoc/android_kernel_lge_l70pds_l70pn" remote="github" revision="master" />
-
+	
+	<!-- Remove the CyanogenMod NFC code -->
+  	<remove-project name="CyanogenMod/android_external_libnfc-nci" />
+  	<remove-project name="CyanogenMod/android_external_libnfc-nxp" />
+  	<remove-project name="CyanogenMod/android_packages_apps_Nfc" />
+  
 
 	<!-- We implement NFC support using the open source NXP implementation. We use a modified HAL for NFC which forces the download of the firmware to the chip -->
 	
@@ -21,11 +26,7 @@
 	<project path="NxpNfcAndroid/NFC_NCIHAL_base" name="NXPNFCProject/NFC_NCIHAL_base" remote="github" revision="refs/tags/NFC_NCIHALx_AR0F.3.5.0_L_OpnSrc"/>
   	<project path="NxpNfcAndroid/" name="NXPNFCLinux/nxpnfc_android_lollipop" remote="github" revision="master"/>
 
-	<!-- Remove the CyanogenMod NFC code -->
-  	<remove-project name="CyanogenMod/android_external_libnfc-nci" />
-  	<remove-project name="CyanogenMod/android_external_libnfc-nxp" />
-  	<remove-project name="CyanogenMod/android_packages_apps_Nfc" />
-  
+
   
 
 </manifest>
